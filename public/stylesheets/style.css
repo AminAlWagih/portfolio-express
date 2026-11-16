@@ -19,7 +19,7 @@ body {
   color: var(--navy);
 }
 
-h2, h3 {
+h1, h2, h3 {
   color: var(--midnight);
 }
 
@@ -60,7 +60,7 @@ a {
 .hero {
   background: linear-gradient(135deg, var(--midnight) 0%, var(--steel) 55%, var(--teal) 100%);
 }
-.hero h2 {
+.hero h1 {
   color: #ffffff;
 }
 
