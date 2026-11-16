@@ -1,0 +1,55 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<main id="main" class="container py-4">
+  <h2>My Projects</h2>
+  <p class="mb-4">A selection of projects and assignments from my courses at Ontario Tech University.</p>
+
+  <!-- Bootstrap grid: 1 column on phones, 2 on tablets, 3 on larger screens -->
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <article class="card project h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5 card-title"><i class="fa-solid fa-diagram-project me-2 text-teal"></i>SAP ERPsim Logistics Navigation Assignment</h3>
+            <p class="card-text">I learned to move through SAP in the ERPsim Logistics Extended Game. I entered a sales forecast (MD61), ran the MRP Run (MD01), and explained why purchase requisitions must exist before purchase orders can be created (ME59N).</p>
+          </div>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card project h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5 card-title"><i class="fa-solid fa-industry me-2 text-teal"></i>Extended ERPsim Manufacturing Game Report</h3>
+            <p class="card-text">A team report (BUSI 2500U) on running a simulated manufacturing company in SAP. We narrowed our product line to two products in two sizes and used SAP reports to time production and ordering, finishing first with the highest sales and company valuation.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card project h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5 card-title"><i class="fa-solid fa-truck-fast me-2 text-teal"></i>Graph Theory in Emergency Response Optimization</h3>
+            <p class="card-text">A discrete mathematics case study on how a city road network can be modelled as a weighted graph. It explains how Dijkstra's algorithm can find the fastest fire truck routes and recalculate them when traffic or road closures change.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card project h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5 card-title"><i class="fa-solid fa-shield-halved me-2 text-teal"></i>Computer Security Individual Report</h3>
+            <p class="card-text">I reviewed and scored classmates' presentations on advanced persistent threat groups such as Kimsuky, Andariel and Lazarus. For each one I connected the attacks to class topics like phishing, malware analysis and threat intelligence.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card project h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5 card-title"><i class="fa-solid fa-network-wired me-2 text-teal"></i>Networking Project Report</h3>
+            <p class="card-text">A two-person report titled The Role of Network Systems in Modern Business and IT Infrastructure. It explains LANs, WANs, routers, switches and servers, and how networks support communication, collaboration and cloud services.</p>
+          </div>
+        </article>
+      </div>
+  </div>
+</main>
+
+<%- include('partials/footer') %>
+</body>
+</html>
