@@ -1,0 +1,131 @@
+/* ==========================================================
+   style.css - my own styles, loaded after Bootstrap so they can override it.
+   Colour scheme (Adobe Color palette "Navy and Teal Portfolio"):
+     Deep Navy  #0B132B   Midnight #1C2541   Steel Blue #3A506B
+     Teal       #5BC0BE   Mist     #F4F7FA
+   ========================================================== */
+
+/* Colour variables so the scheme is defined in one place */
+:root {
+  --navy: #0B132B;
+  --midnight: #1C2541;
+  --steel: #3A506B;
+  --teal: #5BC0BE;
+  --mist: #F4F7FA;
+}
+
+body {
+  background-color: var(--mist);
+  color: var(--navy);
+}
+
+h2, h3 {
+  color: var(--midnight);
+}
+
+a {
+  color: var(--steel);
+}
+
+/* Skip link for keyboard and screen-reader users (accessibility) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--teal);
+  color: var(--navy);
+  padding: 0.5rem 1rem;
+  z-index: 2000;
+}
+
+/* ---------- Header: horizontal linear gradient (to right) ---------- */
+.site-header {
+  background: linear-gradient(to right, var(--navy), var(--steel));
+}
+.site-header .nav-link {
+  color: #ffffff;
+  border-bottom: 3px solid transparent;
+}
+.site-header .nav-link:hover,
+.site-header .nav-link:focus,
+.site-header .nav-link.active {
+  color: #ffffff;
+  border-bottom-color: var(--teal);
+}
+
+/* ---------- Hero banner: angled linear gradient (135deg) ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--midnight) 0%, var(--steel) 55%, var(--teal) 100%);
+}
+.hero h2 {
+  color: #ffffff;
+}
+
+/* ---------- Buttons and accents ---------- */
+.btn-teal {
+  background-color: var(--teal);
+  border-color: var(--teal);
+  color: var(--navy);
+  font-weight: bold;
+}
+.btn-teal:hover,
+.btn-teal:focus {
+  background-color: var(--navy);
+  border-color: var(--navy);
+  color: #ffffff;
+}
+.text-teal {
+  color: var(--steel);   /* teal icons on white are hard to see, so use steel blue for contrast */
+}
+
+/* ---------- Cards ---------- */
+.card {
+  border: 0;
+  border-top: 5px solid var(--teal);
+}
+
+/* ---------- About page video ---------- */
+.intro-video {
+  display: block;
+  width: 100%;
+  max-width: 360px;   /* the intro video is a portrait (phone) recording, so keep it narrow */
+  margin: 0 auto;
+  height: auto;
+  background-color: var(--navy);
+  border-radius: 8px;
+}
+
+/* ---------- Contact form ---------- */
+.contact-form {
+  max-width: 600px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 3px solid var(--teal);
+  box-shadow: none;
+}
+.invalid-feedback {
+  color: #9b1c1c;   /* dark red keeps good contrast on white */
+  font-size: 0.9rem;
+}
+.status {
+  color: #14532d;
+}
+
+/* ---------- Footer: angled linear gradient (45deg) ---------- */
+.site-footer {
+  background: linear-gradient(45deg, var(--navy), var(--midnight) 60%, var(--steel));
+  color: #ffffff;
+}
+.footer-link {
+  color: var(--teal);
+  text-decoration: none;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: #ffffff;
+  text-decoration: underline;
+}
