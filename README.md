@@ -1,7 +1,7 @@
 # Personal Portfolio (Express + EJS) - INFR3120 Assignment 2
 
 **Author:** Amin Al-Wagih
-**Live site:** _to be added after deployment_
+**Live site (Render):** https://portfolio-express-jzpl.onrender.com
 **Repository:** https://github.com/AminAlWagih/portfolio-express
 
 A four page personal portfolio (Home, About Me, Projects, Contact Me) built with **Node.js, Express and the EJS templating engine**. It follows the project layout created by the Express Generator (`express --view=ejs`).
@@ -60,7 +60,7 @@ Then open http://localhost:3000.
 
 ## Deployment
 
-Hosted on Render as a Web Service connected to this GitHub repository.
+Hosted on Render as a free Web Service, deployed from the `main` branch of this GitHub repository.
 - Build command: `npm install`
 - Start command: `npm start`
 
